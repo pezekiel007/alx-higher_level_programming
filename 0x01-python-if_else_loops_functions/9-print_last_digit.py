@@ -1,9 +1,6 @@
 #!/usr/bin/python3
 
-def uppercase(str):
-    for c in str:
-        char = ord(c)
-        if char >= 97 and char <= 122:
-            char -= 32
-        print("{:c}".format(char), end="")
-    print()
+def print_last_digit(number):
+    digit = abs(number) % 10
+    print("{}".format(digit), end="")
+    return(digit)
